@@ -21,7 +21,7 @@ export function AnimationPanel() {
           <p>{selected.description}</p>
           {!videoUnavailable ? (
             <video key={selected.video} controls preload="metadata" onError={() => setVideoUnavailable(true)}>
-              <source src={selected.video} type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}${selected.video.replace(/^\//, '')}`} type="video/mp4" />
             </video>
           ) : (
             <div className="video-placeholder">Animation source included. Render with Manim to view this lesson.</div>

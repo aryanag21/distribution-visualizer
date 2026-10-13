@@ -3,4 +3,11 @@ dist/
 coverage/
 .DS_Store
 public/animations/media/
+public/animations/temp_render/
+public/animations/texts/
+public/animations/videos/
+public/animations/Tex/
+__pycache__/
+*.pyc
+*.tsbuildinfo
 *.log
